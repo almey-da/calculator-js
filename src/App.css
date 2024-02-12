@@ -11,14 +11,12 @@
 .container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    height: 100vh;
+    align-items: center;
 }
 
 h1{
   padding: 2vh;
-  font-size: 2em;
+  font-size: 1.5em;
   color: white;
   margin: auto;
 }
@@ -33,11 +31,9 @@ h1{
   "four five six subtract"
   "one two three add"
   "zero zero decimal equals";
-  grid-template-columns: repeat(4, 100px);
-  gap: 20px;
-  padding: 20px;
-  padding-top: 10px;
-  margin: auto;
+  grid-template-columns: repeat(4, 90px);
+  gap: 10px;
+  padding: 10px;
   border-radius: 20px;
   background-color: var(--black);
 }
@@ -68,7 +64,7 @@ h1{
 }
 
 button{
-  height: 100px;
+  height: 80px;
   font-size: 1.5em;
   border: none;
   cursor: pointer;
@@ -172,4 +168,11 @@ button:active{
 
 #equals{
   grid-area: equals;
+}
+
+@media screen and (max-width: 600px) {
+  button {
+    font-size: 1em;
+    height: 60px;
+  }
 }
